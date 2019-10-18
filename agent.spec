@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['agent.py'],
-             pathex=['D:\\PycharmProjects\\AgentServer'],
+             pathex=['D:\\PycharmProjects\\AgentService'],
              binaries=[],
              datas=[],
              hiddenimports=[],
