@@ -1,4 +1,4 @@
-('D:\\PycharmProjects\\AgentServer\\build\\agent\\PKG-00.pkg',
+('D:\\PycharmProjects\\AgentService\\build\\agent\\PKG-00.pkg',
  {'BINARY': 1,
   'DATA': 1,
   'EXECUTABLE': 1,
@@ -7,7 +7,7 @@
   'PYSOURCE': 1,
   'PYZ': 0},
  [('PYZ-00.pyz',
-   'D:\\PycharmProjects\\AgentServer\\build\\agent\\PYZ-00.pyz',
+   'D:\\PycharmProjects\\AgentService\\build\\agent\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'd:\\program files (x86)\\python\\python37\\lib\\struct.pyo',
@@ -36,20 +36,20 @@
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_win32comgenpy.py',
    'PYSOURCE'),
-  ('agent', 'D:\\PycharmProjects\\AgentServer\\agent.py', 'PYSOURCE'),
-  ('VCRUNTIME140.dll',
-   'd:\\program files (x86)\\python\\python37\\VCRUNTIME140.dll',
-   'BINARY'),
+  ('agent', 'D:\\PycharmProjects\\AgentService\\agent.py', 'PYSOURCE'),
   ('python37.dll',
    'd:\\program files (x86)\\python\\python37\\python37.dll',
    'BINARY'),
-  ('pythoncom37.dll',
-   'D:\\Program Files '
-   '(x86)\\Python\\Python37\\Lib\\site-packages\\pywin32_system32\\pythoncom37.dll',
+  ('VCRUNTIME140.dll',
+   'd:\\program files (x86)\\python\\python37\\VCRUNTIME140.dll',
    'BINARY'),
   ('pywintypes37.dll',
    'D:\\Program Files '
    '(x86)\\Python\\Python37\\Lib\\site-packages\\pywin32_system32\\pywintypes37.dll',
+   'BINARY'),
+  ('pythoncom37.dll',
+   'D:\\Program Files '
+   '(x86)\\Python\\Python37\\Lib\\site-packages\\pywin32_system32\\pythoncom37.dll',
    'BINARY'),
   ('win32trace',
    'd:\\program files '
@@ -94,9 +94,16 @@
   ('_queue',
    'd:\\program files (x86)\\python\\python37\\DLLs\\_queue.pyd',
    'EXTENSION'),
-  ('_cffi_backend',
+  ('win32wnet',
    'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\_cffi_backend.cp37-win_amd64.pyd',
+   '(x86)\\python\\python37\\lib\\site-packages\\win32\\win32wnet.pyd',
+   'EXTENSION'),
+  ('_ctypes',
+   'd:\\program files (x86)\\python\\python37\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('cryptography.hazmat.bindings._constant_time',
+   'd:\\program files '
+   '(x86)\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\bindings\\_constant_time.cp37-win_amd64.pyd',
    'EXTENSION'),
   ('cryptography.hazmat.bindings._openssl',
    'd:\\program files '
@@ -108,12 +115,9 @@
   ('_decimal',
    'd:\\program files (x86)\\python\\python37\\DLLs\\_decimal.pyd',
    'EXTENSION'),
-  ('cryptography.hazmat.bindings._constant_time',
+  ('_cffi_backend',
    'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\bindings\\_constant_time.cp37-win_amd64.pyd',
-   'EXTENSION'),
-  ('_ctypes',
-   'd:\\program files (x86)\\python\\python37\\DLLs\\_ctypes.pyd',
+   '(x86)\\python\\python37\\lib\\site-packages\\_cffi_backend.cp37-win_amd64.pyd',
    'EXTENSION'),
   ('_elementtree',
    'd:\\program files (x86)\\python\\python37\\DLLs\\_elementtree.pyd',
@@ -121,9 +125,6 @@
   ('psutil._psutil_windows',
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\psutil\\_psutil_windows.cp37-win_amd64.pyd',
-   'EXTENSION'),
-  ('servicemanager',
-   'D:\\PycharmProjects\\AgentServer\\servicemanager.pyd',
    'EXTENSION'),
   ('win32event',
    'd:\\program files '
@@ -152,23 +153,31 @@
    'd:\\program files (x86)\\python\\python37\\DLLs\\libcrypto-1_1-x64.dll',
    'BINARY'),
   ('base_library.zip',
-   'D:\\PycharmProjects\\AgentServer\\build\\agent\\base_library.zip',
-   'DATA'),
-  ('cryptography-2.6.1-py3.7.egg-info\\INSTALLER',
-   'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('cryptography-2.6.1-py3.7.egg-info\\AUTHORS.rst',
-   'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\AUTHORS.rst',
+   'D:\\PycharmProjects\\AgentService\\build\\agent\\base_library.zip',
    'DATA'),
   ('cryptography-2.6.1-py3.7.egg-info\\LICENSE',
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\LICENSE',
    'DATA'),
+  ('cryptography-2.6.1-py3.7.egg-info\\top_level.txt',
+   'd:\\program files '
+   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('cryptography-2.6.1-py3.7.egg-info\\RECORD',
+   'd:\\program files '
+   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\RECORD',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'd:\\program files '
+   '(x86)\\python\\python37\\lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
   ('cryptography-2.6.1-py3.7.egg-info\\LICENSE.APACHE',
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\LICENSE.APACHE',
+   'DATA'),
+  ('cryptography-2.6.1-py3.7.egg-info\\AUTHORS.rst',
+   'd:\\program files '
+   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\AUTHORS.rst',
    'DATA'),
   ('cryptography-2.6.1-py3.7.egg-info\\WHEEL',
    'd:\\program files '
@@ -178,27 +187,19 @@
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\LICENSE.BSD',
    'DATA'),
-  ('cryptography-2.6.1-py3.7.egg-info\\RECORD',
+  ('cryptography-2.6.1-py3.7.egg-info\\INSTALLER',
    'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\RECORD',
-   'DATA'),
-  ('cryptography-2.6.1-py3.7.egg-info\\top_level.txt',
-   'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\top_level.txt',
+   '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\INSTALLER',
    'DATA'),
   ('cryptography-2.6.1-py3.7.egg-info\\METADATA',
    'd:\\program files '
    '(x86)\\python\\python37\\lib\\site-packages\\cryptography-2.6.1.dist-info\\METADATA',
    'DATA'),
-  ('certifi\\cacert.pem',
-   'd:\\program files '
-   '(x86)\\python\\python37\\lib\\site-packages\\certifi\\cacert.pem',
-   'DATA'),
   ('Include\\pyconfig.h',
    'd:\\program files (x86)\\python\\python37\\Include\\pyconfig.h',
    'DATA'),
   ('agent.exe.manifest',
-   'D:\\PycharmProjects\\AgentServer\\build\\agent\\agent.exe.manifest',
+   'D:\\PycharmProjects\\AgentService\\build\\agent\\agent.exe.manifest',
    'BINARY'),
   ('pyi-windows-manifest-filename agent.exe.manifest', '', 'OPTION')],
  False,
